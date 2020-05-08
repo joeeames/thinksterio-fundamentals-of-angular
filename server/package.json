@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch data.json"
+    "start": "json-server --watch data.json",
+    "restoredb": "cp data-original.json data.json"
   },
   "keywords": [],
   "author": "Joe Eames",
