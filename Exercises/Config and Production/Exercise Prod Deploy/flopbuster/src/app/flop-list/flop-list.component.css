@@ -1,0 +1,16 @@
+.card {
+  width:9rem; height:100%
+}
+
+.card-body {
+  display:flex; flex-direction:column; justify-content: space-between;
+}
+
+img {
+  max-width:100%;
+  margin-bottom: 1rem
+}
+
+button {
+  align-self:flex-start;
+}

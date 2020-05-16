@@ -1,0 +1,15 @@
+<div>
+  <h4>Actors</h4>
+  <a [routerLink]="['/actors']" 
+    [queryParams]="{sort:'name'}"
+    >By Name</a>
+
+
+
+  <div *ngFor="let actor of actors; index as i"
+    class="bg-dark text-light p-3 rounded mb-2"
+    >
+    <span>{{(i+1) + '. ' + actor.name}}</span>
+  </div>
+
+</div>
