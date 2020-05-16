@@ -1,0 +1,14 @@
+<div class="card-body text-dark" style="padding:0">
+  <h6>Rentals 
+    <span class="badge badge-secondary">
+      {{rentalList.length}}</span>
+
+  </h6>
+  <div *ngFor="let flop of rentalList" style="font-size:12px">{{flop.title}}
+    <i 
+      (click)="onDelete(flop.id)"
+      class="material-icons">delete</i>
+  </div>
+  
+
+</div>

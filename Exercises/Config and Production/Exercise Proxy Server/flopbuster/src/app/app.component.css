@@ -1,0 +1,11 @@
+p {
+  font-family: Lato;
+}
+
+.header-panel {
+  background-color: darkgray; border-radius:0.25rem;
+}
+
+.movie-panels {
+  display:flex; justify-content:space-around;
+}

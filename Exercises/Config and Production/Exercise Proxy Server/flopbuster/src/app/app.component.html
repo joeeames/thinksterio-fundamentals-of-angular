@@ -1,0 +1,31 @@
+<h4>Flopbox</h4>
+
+<div class="header-panel d-flex m-1 mb-4 p-2" >
+  <div class="p-2 col-6">
+    We have all the best flops in the business!
+    <br>
+    Choose a flop to rent
+  </div>
+
+  
+  <div class="card p-2 col-6" >
+    <my-rental-list 
+      [rentalList]="rentalList"
+      (delete)="onDeleteItemFromList($event)"
+      ></my-rental-list>
+  </div>
+  
+</div>
+
+<b>Movies to Rent</b>
+<div class="movie-panels" style="flex-wrap:wrap">
+  
+  <my-movie-tile 
+    *ngFor="let flop of flops$ | async" 
+    class="mb-2" 
+    (rent)="addToRentalList(flop)"
+    [movie]="flop"></my-movie-tile>
+  
+
+</div>
+
